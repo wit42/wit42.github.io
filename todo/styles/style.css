@@ -4,12 +4,19 @@ html {
 }
 
 body {
+    height: inherit;
+    width: inherit;
     background-color: #fffbf3;
+    font-family: "Ubuntu Mono", sans-serif;
+    margin: 0;
+    position: absolute;
 }
 
 main {
     width: 70%;
-    margin: auto;
+    height: 75%;
+    margin: 5% auto;
+    position: relative;
 }
 
 section {
@@ -18,14 +25,56 @@ section {
     float: left;
 }
 
+ol {
+    margin: 0;
+    padding: 0;
+    background-color: #ffefd0;
+    list-style-type: none;
+}
+
 #left_list {
     margin-right: 20%;
 }
 
 .list_header {
-    border-bottom: 2px solid #794312;
+    font-size: max(36px, 3.5vw);
+    border-bottom: 4px solid #794312;
+    color: #794312;
+    font-weight: inherit;
+    margin: 0;
 }
 
 /* .root_list_style {
 
 } */
+
+li {
+    border-bottom: 1px solid #9B714A;
+    height: 50px;
+}
+
+input {
+    border: 0;
+    padding: 0;
+}
+
+button {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: none;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+/*button > img {
+    height: inherit;
+    width: inherit;
+}*/
+
+.fade_gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), #fffbf3);
+}
