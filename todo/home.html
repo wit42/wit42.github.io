@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>To-do</title>
         <script src="scripts/list.js"></script>
+        <script src="scripts/main.js" defer="true"></script>
         <link rel="stylesheet" href="styles/style.css" />
     </head>
 
@@ -11,12 +12,12 @@
         <main>
             <section id="left_list">
                 <h1 class="list_header">To-do</h1>
-                <div class="fade_gradient"></div>
+                <!--<div class="fade_gradient"></div>-->
+                <div id="list_input">
+                    <input id="add_item" type="text" placeholder="New task..."/>
+                    <button class="check"><img src="images/check.svg" /></button>
+                </div>
                 <ol class="root_list_style">
-                    <li id="list_input">
-                        <input type="text" placeholder="New task..."/>
-                        <button><img src="images/check.svg" /></button>
-                    </li>
                     <li></li>
                     <li></li>
                     <li></li>
